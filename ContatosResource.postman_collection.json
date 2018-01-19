@@ -1,0 +1,90 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ContatosResource",
+		"_postman_id": "a65ae462-ec80-b846-0c16-6a86b03a6c14",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar",
+			"request": {
+				"url": "http://localhost:8080/contatos",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar",
+			"request": {
+				"url": "http://localhost:8080/contatos/1",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar",
+			"request": {
+				"url": "http://localhost:8080/contatos",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\": \"Daniel Henrique\",\n\t\"email\": \"daniel@email.com\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar",
+			"request": {
+				"url": "http://localhost:8080/contatos/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\": \"Daniel Henrique da Silva\",\n\t\"email\": \"daniel@email.com\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Remover",
+			"request": {
+				"url": "http://localhost:8080/contatos/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
